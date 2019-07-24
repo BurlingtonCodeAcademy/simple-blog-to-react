@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <h1>Express Blog</h1>
+    <script type="text/babel">
+      ReactDOM.render(<h1>Hello React Page</h1>, document.getElementById('root'))
+    </script>
+    <div id="root"></div>
+    <!-- <h1>Express Blog</h1>
 
     <form method="GET" action="/search">
       <label for="author">Search by Author:</label>
@@ -19,6 +26,6 @@
       <li><a href="/articles/1">Featured Article</a></li>
       <li><a href="/articles">All Articles</a></li>
       <li><a href="/publish">Publish a New Article</a></li>
-    </ul>
+    </ul> -->
   </body>
 </html>
